@@ -13,6 +13,6 @@ class Target(Base):
     target_type_id = Column(Integer, ForeignKey('target.target_type_id'), nullable=True)
     target_priority = Column(Integer, nullable=True)
 
-    mission = relationship('Mission', lazy='immediate', back_populates='target')
-    city = relationship('City', lazy='immediate', back_populates='target')
-    target_type = relationship('TargetType', lazy='immediate', back_populates='target')
+    # mission = relationship('Mission', lazy='immediate', back_populates='target')
+    # city = relationship('City', lazy='immediate', back_populates='target')
+    # target_type = relationship('TargetType', lazy='immediate', back_populates='target')
